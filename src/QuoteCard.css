@@ -1,0 +1,38 @@
+.quote-card {
+    background: linear-gradient(135deg, #222, #444); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+    padding: 2rem; /* Increased padding */
+    text-align: center;
+    color: white;
+    width: 400px; 
+    height: 400px;
+    margin: 1.5rem; /* More spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: scale(1.07); /* Enlarge a bit more on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+  }
+  
+  .quote-image {
+    width: 120px; /* Larger image */
+    height: 120px; /* Larger image */
+    border-radius: 15px; /* Rounded square */
+    margin-bottom: 1.5rem; /* More space below the image */
+    border: 3px solid white; /* Thicker border */
+    object-fit: cover; /* Ensures the image fits without distortion */
+  }
+    
+  .quote-text {
+    font-size: 1.2rem; /* Larger font size for the quote */
+    font-style: italic;
+    margin-bottom: 1.5rem; /* More space below the quote */
+  }
+  
+  .quote-author {
+    font-size: 1.5rem; /* Larger font size for the author name */
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,10 @@
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #121212; /* Optional dark background for contrast */
+    gap: 1.5rem;
+  }
+  
