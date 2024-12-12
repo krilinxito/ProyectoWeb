@@ -40,7 +40,7 @@ const Terrifier = () => {
     <>
       <SoloReview
         backgroundImage="https://images.alphacoders.com/129/thumb-1920-1294021.jpg"
-        posterImage="/terrifier3.jpg"
+        posterImage="terrifier3.jpg"
         title="Terrifier 3"
         description="Terrifier 3 continues the horrifying saga of Art the Clown. Directed by Damien Leone, this installment promises more gore, scares, and an even darker story."
         rating={3.7} // Calificación en escala de 5
