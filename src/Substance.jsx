@@ -40,7 +40,7 @@ const TheSubstance = () => {
     <>
       <SoloReview
         backgroundImage="https://wallpapersbq.com/images/the-substance/the-substance-wallpaper-2.webp"
-        posterImage="/substance.webp"
+        posterImage="public/substance.webp"
         title="The Substance"
         description="The Substance is a gripping thriller that dives deep into the mysterious and unexplainable. A haunting tale of human ambition and its unforeseen consequences."
         rating={4.5} // Calificación en escala de 5

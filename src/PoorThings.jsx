@@ -41,7 +41,7 @@ const PoorThings = () => {
     <>
       <SoloReview
         backgroundImage="https://cdn.theasc.com/Poor-Things-Emma-Stone-Virtual-Feature.jpeg"
-        posterImage="poorthings.webp"
+        posterImage="/poorthings.webp"
         title="Poor Things"
         description="Poor Things is a surreal tale of identity, autonomy, and transformation. Directed by Yorgos Lanthimos, it brings a visually stunning narrative of reanimation and self-discovery to life."
         rating={4.7} // Calificación en escala de 5
