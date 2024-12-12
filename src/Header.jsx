@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header">
     <video className="video-bg" autoPlay loop muted>
-    <video src={`${process.env.PUBLIC_URL}/video.mp4`} controls />
+    <video src="video.mp4" controls />
       Your browser does not support the video tag.
     </video>
     <div className="overlay">
