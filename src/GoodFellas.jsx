@@ -40,7 +40,7 @@ const GoodFellas = () => {
     <>
       <SoloReview
         backgroundImage="https://wallpaperaccess.com/full/1337553.jpg"
-        posterImage="public/goodfellas.jpg"
+        posterImage="/goodfellas.jpg"
         title="Goodfellas"
         description="Goodfellas, directed by Martin Scorsese, is a timeless masterpiece chronicling the rise and fall of a mob associate. With gripping performances and iconic style, it remains one of the greatest gangster films of all time."
         rating={4.9} // Calificación en escala de 5

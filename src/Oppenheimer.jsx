@@ -19,8 +19,8 @@ const Oppenheimer = () => {
   return (
     <>
     <SoloReview
-      backgroundImage="public/oppie.jpeg"
-      posterImage="public/oppenheimer_poster.webp"
+      backgroundImage="/oppie.jpeg"
+      posterImage="/oppenheimer_poster.webp"
       title="Oppenheimer"
       description="Oppenheimer is a mind-bending exploration of the life of the 'father of the atomic bomb.' Directed by Christopher Nolan, it delves into the complexities of J. Robert Oppenheimer's life."
       rating={4.8} // Calificación en escala de 5

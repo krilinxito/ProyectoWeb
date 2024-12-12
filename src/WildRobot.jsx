@@ -40,7 +40,7 @@ const WildRobot = () => {
     <>
       <SoloReview
         backgroundImage="https://www.wallpapergap.com/cdn/24/345/the-wild-robot-book-wallpapers-1200x800.jpg"
-        posterImage="wildrobot.jpg"
+        posterImage="/wildrobot.jpg"
         title="The Wild Robot"
         description="The Wild Robot is a heartwarming animated adventure that explores themes of survival, friendship, and the beauty of nature through the journey of Roz, a robot stranded in the wilderness."
         rating={4.8} // Calificación en escala de 5

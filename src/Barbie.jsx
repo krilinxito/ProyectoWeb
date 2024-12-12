@@ -19,8 +19,8 @@ const Barbie = () => {
   return (
     <>
       <SoloReview
-        backgroundImage="barbiewp.jpg"
-        posterImage="barbie.jpg"
+        backgroundImage="/barbiewp.jpg"
+        posterImage="/barbie.jpg"
         title="Barbie"
         description="Barbie is a visually stunning and witty tale of self-discovery, filled with humor, adventure, and heartfelt moments. Directed by Greta Gerwig, the movie reimagines the iconic doll for a modern audience."
         rating={4.5} // Calificación en escala de 5

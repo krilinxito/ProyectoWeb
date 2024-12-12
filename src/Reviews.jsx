@@ -20,7 +20,7 @@ const Reviews = () => {
   return (
     <>
       <HeroSection
-        backgroundImage="posters.jpg"
+        backgroundImage="/posters.jpg"
         title="Newest Reviews"
         subtitle="Dive into the latest takes on your favorite movies and shows."
         overlayColor="rgba(0, 0, 0, 0.7)"
