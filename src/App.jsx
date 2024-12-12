@@ -15,6 +15,7 @@ import Venom from './Venon.jsx'
 import Substance from './Substance.jsx'
 import Terrifier from "./Terrifier.jsx";
 import WildRobot from "./WildRobot.jsx";
+import Suscription from "./Suscription.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/reviews/the-wild-robot" element={<WildRobot />} />
         {/* Ruta de contacto */}
         <Route path="/contact" element={<Contact />} />
+        <Route path="/suscription" element={<Suscription />} />
       </Routes>
     </Router>
   );

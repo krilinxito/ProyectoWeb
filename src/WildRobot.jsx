@@ -12,22 +12,22 @@ const WildRobot = () => {
     {
       name: "Jacob Tremblay",
       role: "Brightbill (Voice)",
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Jacob_Tremblay_by_Gage_Skidmore.jpg",
+      image: "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRLi5hgyZ24fl2J_pKX_KaHkZ_5LYgDeJhcxZO5GI9ipr8_uKQ3FwuTqCqWz1bqk0_WpPGUcSinX8bFg-Y",
     },
     {
       name: "Ewan McGregor",
       role: "Narrator",
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/74/Ewan_McGregor_by_Gage_Skidmore.jpg",
+      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW-YqwbmXBvPqwvj4l4Yu-ms4M3zAE8lFwcIEiEvNSfQWRWW5EWO3-rPr5DaMFRxBx7Ghl06datYe7g4vKGcvrvQ",
     },
     {
       name: "Viola Davis",
       role: "Mother Goose (Voice)",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Viola_Davis_by_Gage_Skidmore.jpg",
+      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTatvqxSM7tYoBudS1YOptpSP2ZOVso8kaGoMnMp1BVHlkjHWqVJf84XXGwr_yVmTA4tHeRuzVDCxvDEqE5DQFzyA",
     },
     {
       name: "Hugh Jackman",
       role: "The Inventor (Voice)",
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hugh_Jackman_by_Gage_Skidmore.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdrIOtNFvpRgXslgY3bwpVPWvbiboZF3gvA&s",
     },
   ];
 

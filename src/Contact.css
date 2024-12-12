@@ -1,0 +1,112 @@
+/* Contenedor Principal */
+.contact-container {
+    background: linear-gradient(to bottom, #111, #222);
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Encabezado */
+  .contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #e63946, #dc2f42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Formulario */
+  .contact-form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border: 1px solid #e63946;
+    outline: none;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(to right, #e63946, #dc2f42);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #dc2f42, #e63946);
+    transform: scale(1.05);
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Respuesta Responsiva */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 1.5rem;
+    }
+  
+    .contact-header h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-header p {
+      font-size: 1rem;
+    }
+  }
+  

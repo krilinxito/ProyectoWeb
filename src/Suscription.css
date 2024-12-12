@@ -1,0 +1,168 @@
+/* Contenedor principal */
+.subscription-container {
+    background: linear-gradient(to bottom, #111, #222);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    width: 110%;
+    height: 40vh; /* Cambia por tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.85); /* Más oscuro para mayor contraste */
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 5%;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff6f61, #ff3e41); /* Gradiente rojo brillante */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+  }
+  
+  .hero-overlay p {
+    font-size: 1.4rem; /* Más grande para mayor claridad */
+    color: #f5f5f5; /* Blanco claro */
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra adicional */
+  }
+  
+  /* Planes */
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+  }
+  
+  .plan-card {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(255, 111, 97, 0.8);
+  }
+  
+  .plan-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff6f61;
+  }
+  
+  .plan-price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan-features li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #d1d5db;
+  }
+  
+  /* Botón */
+  .subscribe-button {
+    background: linear-gradient(to right, #ff6f61, #ff3e41);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .subscribe-button:hover {
+    background: linear-gradient(to right, #ff3e41, #ff6f61);
+    transform: scale(1.05);
+  }
+  
+  .subscribe-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsividad */
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      height: 30vh; /* Reduce la altura del héroe */
+    }
+  
+    .hero-overlay h1 {
+      font-size: 2.5rem; /* Reduce el tamaño del texto */
+    }
+  
+    .hero-overlay p {
+      font-size: 1.2rem; /* Ajusta el texto para pantallas pequeñas */
+    }
+  
+    .plans-container {
+      padding: 1rem; /* Reduce el padding general */
+      gap: 1rem;
+    }
+  
+    .plan-card {
+      padding: 1.5rem; /* Ajusta el padding interno */
+    }
+  
+    .plan-name {
+      font-size: 1.5rem;
+    }
+  
+    .plan-price {
+      font-size: 1.3rem;
+    }
+  
+    .plan-features li {
+      font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+  
+    .subscribe-button {
+      padding: 0.6rem 1.5rem; /* Reduce el padding del botón */
+      font-size: 0.9rem;
+    }
+  }
+  

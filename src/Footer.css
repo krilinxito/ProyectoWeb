@@ -1,29 +1,42 @@
+/* Footer Styles */
 .footer {
-    background-color: #121212;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-  }
-  
-  .footer .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footer .social-icon {
-    color: white;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .footer .social-icon:hover {
-    color: #d32f2f; /* Change to red on hover */
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
-  }
-  
-  .footer .icon {
-    width: 32px;
-    height: 32px;
-  }
-  
+  background: linear-gradient(to right, #111, #222);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .social-icon {
+  display: inline-block;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+  transform: scale(1.2);
+  color: #e63946; /* Rojo suave */
+}
+
+.footer .icon {
+  width: 50px;
+  height: 50px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #d1d5db; /* Texto gris claro */
+  margin-top: 0;
+}

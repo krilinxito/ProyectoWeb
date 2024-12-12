@@ -99,6 +99,7 @@
     align-items: center;
     z-index: 5;
     padding: 1rem;
+    gap: 1rem;
   }
   
   .mobile-menu.show {
@@ -138,11 +139,13 @@
     display: flex; /* Mostrar cuando esté en hover */
     flex-direction: column;
   }
-  
+
   .things
 {
   display: flex;
   flex-direction: row;
+  margin-bottom: 3px;
+  margin: 0;
 }
 .things svg 
 {
