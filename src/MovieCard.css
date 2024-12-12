@@ -1,0 +1,86 @@
+.movie-card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Asegura que las tarjetas ocupen el espacio del contenedor */
+  max-width: 900px; /* Define un tamaño máximo para mantener la proporción */
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+  padding: 25px;
+  height: 400px;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card-img {
+  flex: 1;
+  height: 100%;
+  max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+  object-fit: cover;
+  max-width: 40%; /* Las imágenes ocupan un 40% del ancho de la tarjeta */
+  border-right: 5px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.movie-card:hover .movie-card-img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.movie-card-content {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.movie-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.movie-card-divider {
+  border: none;
+  border-top: 2px solid #ffffff;
+  width: 30%;
+  margin: 15px 0;
+}
+
+.movie-card-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+    max-width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .movie-card-img {
+    max-width: 100%; /* La imagen se adapta al ancho completo */
+    max-height: 200px; /* Reduce la altura de la imagen */
+    border-right: none; /* Quita el borde entre imagen y contenido */
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .movie-card-content {
+    text-align: center;
+  }
+
+  .movie-card-title {
+    font-size: 1.5rem;
+  }
+
+  .movie-card-text {
+    font-size: 1rem;
+  }
+}

@@ -1,151 +1,53 @@
+/* Contenedor principal del header */
 .header {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full height */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la ventana del navegador */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Video de fondo */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Asegura que cubra toda la altura del header */
+  object-fit: cover; /* Ajusta el video al contenedor */
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+/* Capa superpuesta */
+.overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  padding: 2rem;
+}
+
+.overlay h1 {
+  font-size: 12rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 3rem;
   }
-  
-  .header .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+
+  .overlay p {
+    font-size: 1.2rem;
   }
-  
-  .header .logo img {
-    width: 90px; /* Slightly bigger logo */
-    height: 90px;
-    transition: transform 0.3s ease; /* Add hover animation */
-  }
-  
-  .header .logo img:hover {
-    transform: scale(1.15); /* Enlarge slightly on hover */
-  }
-  
-  .header .hamburger-menu {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px; /* Adjust size */
-    height: 30px;
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  
-  .header .hamburger-menu span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px; /* Thicker lines */
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-  
-  .header .hamburger-menu span:nth-child(1) {
-    top: 0;
-  }
-  
-  .header .hamburger-menu span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .header .hamburger-menu span:nth-child(3) {
-    top: 100%;
-    transform: translateY(-100%);
-  }
-  
-  .header .hamburger-menu:hover span {
-    background-color: #d32f2f; /* Change color on hover */
-  }
-  
-  .hamburger-menu.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* Cross effect */
-    top: 50%;
-  }
-  
-  .hamburger-menu.open span:nth-child(2) {
-    opacity: 0; /* Hide the middle bar */
-  }
-  
-  .hamburger-menu.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px); /* Cross effect */
-    top: 50%;
-  }
-  
-  .mobile-menu {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    display: none;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  
-  .mobile-menu.show {
-    display: flex;
-  }
-  
-  .mobile-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .mobile-menu a:hover {
-    color: #d32f2f;
-  }
-  
-  
-  /* Video Background */
-  .header .video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  /* Overlay Section */
-  .header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align text to the left */
-    padding-left: 5rem; /* Add left padding for better alignment */
-    z-index: 1;
-  }
-  
-  .header h1 {
-    font-size: 10rem; /* Larger font size */
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .header p {
-    font-size: 2rem; /* Bigger font size */
-    font-weight: lighter;
-    font-style: italic;
-    margin-top: 1rem;
-  }
-  
+}
